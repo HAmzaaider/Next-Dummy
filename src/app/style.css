@@ -1,0 +1,211 @@
+.container {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #1a1a2e;
+}
+
+.input {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: #4f46e5;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #4338ca;
+}
+
+/* ===== USER LIST PAGE ===== */
+
+.page-wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.page-wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 10px;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.user-container:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.user-name a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.user-name a:hover {
+    color: #4f46e5;
+}
+
+.edit-btn {
+    background-color: #f0f0ff;
+    color: #4f46e5;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #e0e0ff;
+}
+
+.delete-btn {
+    background-color: #fff0f0;
+    color: #e53e3e;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #ffe0e0;
+}
+
+
+
+
+/* ===== PRODUCT TABLE PAGE ===== */
+
+.table-wrapper {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.table-wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #4f46e5;
+    padding-bottom: 10px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.product-table thead tr {
+    background-color: #4f46e5;
+    color: white;
+    text-align: left;
+}
+
+.product-table thead td {
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+}
+
+.product-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.product-table tbody tr:hover {
+    background-color: #f5f5ff;
+}
+
+.product-table tbody td {
+    padding: 13px 18px;
+    font-size: 15px;
+    color: #1a1a2e;
+}
+
+
+
+.product-table thead td,
+.product-table tbody td {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-table tbody td {
+    border-right: 1px solid #e5e7eb;
+}
+
+
+
+.product-table {
+    border-collapse: collapse; /* already there */
+}
+
+.product-table td {
+    border: 1px solid #e5e7eb;
+}
+
+.product-table thead td {
+    border-color: rgba(255, 255, 255, 0.25);
+}
