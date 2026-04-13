@@ -9,13 +9,11 @@ export default function AddUser(){
     const [location, setlocation] = useState("")
 
     const adduser = async () => {
-        let response = await fetch("http://localhost:3000/api/Users", {
-            method: "POST",
-            headers: {
-            "Content-Type": "application/json"  // ✅ add this header
-        },
-            body: JSON.stringify({ name, age, location })
-        })
+       let response = await fetch("/api/Users", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, age, location })
+})
         let data = await response.json()
         if(data.success){
             alert("User Added Successfully")

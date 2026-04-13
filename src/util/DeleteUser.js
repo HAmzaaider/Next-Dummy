@@ -15,9 +15,9 @@ export default function Deleteuser(props) {
     const userid = props.id;
 
     const deleteuser = async () => {
-        let result = await fetch("http://localhost:3000/api/Users/" + userid, { 
-            method: "DELETE"   // ✅ fixed typo: was "methos"
-        })
+       let response = await fetch("/api/Users/" + userid, {
+    method: "DELETE"
+})
         result = await result.json()  // ✅ parse the response
 
         if (result.success) {         // ✅ now inside the function
